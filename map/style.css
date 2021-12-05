@@ -3,3 +3,61 @@
     font-family: 'Quicksand', sans-serif;
 }
 
+#map {
+    height: 350px;
+    position: relative;
+}
+
+.control-panel {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    position: relative;
+}
+
+.control-panel h4 {
+    margin: 0 0 5px;
+    color: #777;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.control-panel span {
+    color: #FF0000;
+}
+
+.info {
+    line-height: 18px;
+    color: #333;
+    background-color: #888;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    padding: 10px 5px;
+
+}
+
+.info i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+}
+
+.output {
+    background-color: #e03140;
+    color: #FFFFFF;
+    font-weight: bolder;
+    padding: 10px 10px;
+    text-align: center;
+    margin-top: -20px;
+    border-radius: 5px;
+}
+
+.name {
+    font-weight: bolder;
+    text-align: center;
+}
+
