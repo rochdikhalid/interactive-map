@@ -1,5 +1,3 @@
-// Geographic Coordinates
-
 const regions = {
     "type": "FeatureCollection",
     "features": [{
