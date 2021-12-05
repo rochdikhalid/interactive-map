@@ -14,7 +14,7 @@ Inside the archives downloaded from the above link, you will see four things:<br
 * **leaflet.css** - This is the stylesheet for Leaflet.
 * **images** - This is a folder that contains images referenced by leaflet.css. It must be in the same directory as leaflet.css
 
-Unzip the downloaded archive to your website’s directory and add this to the head of your HTML code:<br>
+Unzip the downloaded archive to your project directory and add this to the head of your HTML code:<br>
 
 `<link rel="stylesheet" href="/path/to/leaflet.css" />` <br>
 `<script src="/path/to/leaflet.js"></script>`
@@ -28,4 +28,4 @@ Place this in the head of your HTML code:
 `<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>`
 
 ## Further help
-For more information, visit Leaflet official documentation's website: https://leafletjs.com/
+For more information, visit the official leaflet documentation: https://leafletjs.com/
