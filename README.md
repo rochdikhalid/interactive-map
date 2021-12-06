@@ -5,7 +5,7 @@ An interactive map built with JavaScript and Leaflet, it shows the population de
 Note that the repository already includes the necessary library files to display the map. <br>
 Link to download the latest version of Leaflet: https://leafletjs.com/download.html
 
-### Using a Downloaded Version of Leaflet
+### To use the downloaded version of Leaflet
 
 Inside the archives downloaded from the above link, you will see four things:<br>
 
@@ -17,15 +17,16 @@ Inside the archives downloaded from the above link, you will see four things:<br
 Unzip the downloaded archive to your project directory and add this to the head of your HTML code:<br>
 
 `<link rel="stylesheet" href="/path/to/leaflet.css" />` <br>
+<br>
 `<script src="/path/to/leaflet.js"></script>`
 
-### Using a Hosted Version of Leaflet
+### To use the hosted version of Leaflet
 
 Place this in the head of your HTML code:
 
-`<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />`
+`<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />`<br>
 <br>
 `<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>`
 
-## Further help
+## Further Help
 For more information, visit the official leaflet documentation: https://leafletjs.com/
