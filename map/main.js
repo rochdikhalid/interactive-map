@@ -1,23 +1,24 @@
-/* An Interactive Map */
+/* An interactive map shows the population density of Morocco for each geographic level */
 
-// Setting up the map //
+// Setting the map requirements //
 const firstMap = L.map('map', {
     center: [32.43, -6.06],
     zoom: 3.75
 });
 
+// To set the map style
 const OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	maxZoom: 19,
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(firstMap);
 
-// Creating a GeoJSON object to represent the regions of Morocco
+// To create a GeoJSON object to represent the regions of Morocco
 L.geoJSON(regions).addTo(firstMap);
 
-// Adding custom style to GeoJSON objects //
+// To add custom style to GeoJSON objects //
 colors = ['#f7fcfd','#e0ecf4','#bfd3e6','#9ebcda','#8c96c6','#8c6bb1','#88419d','#810f7c','#4d004b']
 
-// Color gradient
+// To configure the color gradient
 function getColor(c) {
   return c > 8 ? '#810F7C':
          c > 7.5 ? '#88419D':
@@ -44,7 +45,7 @@ let geojson = L.geoJSON(regions, {style: style}).addTo(firstMap);
 
 // Adding Some Interactions //
 
-// Highlighting Features
+// To highlight features
 function highlightFeatures(e) {
   let layer = e.target;
   layer.setStyle({
@@ -53,11 +54,9 @@ function highlightFeatures(e) {
     fillOpacity: 1,
     weight: 3
   })
-
   if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
     layer.bringToFront();
   }
-
   controlPanel.update(layer.feature.properties);
 }
 
@@ -103,12 +102,10 @@ legend.onAdd = function() {
   let info = L.DomUtil.create('div', 'info');
   grades = [0, 0.5, 1, 1.5, 3, 5.5, 6.5, 7, 7.5, 8];
   for(let grade = 0; grade < grades.length; grade++) {
-
     info.innerHTML += 
     '<i style="background:' + getColor(grades[grade] + 1) + '"></i> ' +
     grades[grade] + (grades[grade + 1] ? ' &ndash; ' + grades[grade + 1] + '<br>' : ' +');
   }
-
   return info;
 };
 
