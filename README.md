@@ -3,7 +3,7 @@ An interactive map built with JavaScript and Leaflet, it shows the population de
 
 ## Leaflet Setup
 Note that the repository already includes the necessary library files to display the map. <br>
-Link to download the latest version of Leaflet: https://leafletjs.com/download.html
+Go to this link to download the latest version of Leaflet: https://leafletjs.com/download.html
 
 ### To use the downloaded version of Leaflet
 
