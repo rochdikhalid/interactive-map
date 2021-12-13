@@ -18,7 +18,7 @@ Unzip the downloaded archive to your project directory and add this to the head 
 
 `<link rel="stylesheet" href="/path/to/leaflet.css" />` <br>
 <br>
-`<script src="/path/to/leaflet.js"></script>`
+`<script src="/path/to/leaflet.js"></script>` (preferable to place it at the end of body tag)
 
 ### To use the hosted version of Leaflet
 
