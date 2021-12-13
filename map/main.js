@@ -6,19 +6,19 @@ const firstMap = L.map('map', {
     zoom: 3.75
 });
 
-// To set the map style
+// To set the map configuration
 const OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	maxZoom: 19,
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(firstMap);
 
-// To create a GeoJSON object to represent the regions of Morocco
+// Create a GeoJSON object to represent the 12 regions of Morocco
 L.geoJSON(regions).addTo(firstMap);
 
-// To add custom style to GeoJSON objects //
+// Define the color table //
 colors = ['#f7fcfd','#e0ecf4','#bfd3e6','#9ebcda','#8c96c6','#8c6bb1','#88419d','#810f7c','#4d004b']
 
-// To configure the color gradient
+// Configure the color gradient based on the population density
 function getColor(c) {
   return c > 8 ? '#810F7C':
          c > 7.5 ? '#88419D':
