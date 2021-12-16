@@ -1,5 +1,5 @@
 # interactive-map
-An interactive map built with JavaScript and Leaflet, it shows the population density (expressed in million people) of Morocco for each geographic level.
+An interactive map built with JavaScript and Leaflet, it shows Morocco's population density (expressed in million people) by region.
 
 ## Leaflet Setup
 Note that the repository already includes the necessary library files to display the map. <br>
