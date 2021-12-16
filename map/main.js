@@ -7,9 +7,12 @@ const firstMap = L.map('map', {
 });
 
 // To set the map configuration
-const OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+const OpenStreetMap_Mapnik = L.tileLayer('https://wxs.ign.fr/{apikey}/geoportail/wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&STYLE={style}&TILEMATRIXSET=PM&FORMAT={format}&LAYER=ORTHOIMAGERY.ORTHOPHOTOS&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}', {
 	maxZoom: 19,
-	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	attribution: '<a target="_blank" href="https://www.geoportail.gouv.fr/">Geoportail France</a>',
+  	apikey: 'choisirgeoportail',
+	format: 'image/jpeg',
+	style: 'normal'
 }).addTo(firstMap);
 
 // Create a GeoJSON object to represent the 12 regions of Morocco
